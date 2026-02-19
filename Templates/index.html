@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rising Waters - Flood Prediction & Safety</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/edge/css/all.min.css">
+    <style>
+        :root {
+            --primary-dark: #002147;
+            --accent-blue: #00aaff;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f8f9fa;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 33, 71, 0.85), rgba(0, 33, 71, 0.85)), url('https://images.unsplash.com/photo-1547683905-f686c993aae5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            min-height: 80vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--accent-blue);
+            margin-bottom: 1.5rem;
+        }
+        .card {
+            border: none;
+            transition: transform 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .btn-primary {
+            background-color: var(--accent-blue);
+            border: none;
+            padding: 12px 35px;
+            font-weight: 600;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-2 fw-bold mb-4">Protecting Lives Through AI</h1>
+            <p class="lead mb-5 fs-3">Our Advanced Neural Network predicts flood risks with <strong>97% Accuracy</strong>, providing critical early warnings when every second counts.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="/home" class="btn btn-primary btn-lg px-5">Get Instant Risk Assessment</a>
+                <a href="#features" class="btn btn-outline-light btn-lg px-5">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="py-5">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold text-dark">Why Choose Rising Waters?</h2>
+                    <p class="text-muted">We combine historical climate data from 1901-2015 with cutting-edge machine learning to deliver reliable flood forecasts.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 p-4">
+                        <div class="feature-icon"><i class="fas fa-microchip"></i></div>
+                        <h3>AI-Driven Analysis</h3>
+                        <p class="text-muted">Utilizing XGBoost algorithms trained on over a century of meteorological data for maximum reliability.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4">
+                        <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                        <h3>Early Warning</h3>
+                        <p class="text-muted">Get real-time probability assessments to help you prepare before the water starts rising.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Safety Measures</h3>
+                        <p class="text-muted">Not just data—we provide clear, actionable steps to protect your family and property.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Rising Waters Early Warning System | Data-Driven Safety</p>
+        </div>
+    </footer>
+</body>
+</html>
